@@ -8,6 +8,7 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 25px;
+    margin: 15px;
 }
 
 /* Ajuste do título principal do cabeçalho */

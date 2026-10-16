@@ -45,7 +45,7 @@
 }
 
 .categoria.Promoção {
-    background: red;
+    background: #d11a2a;
 }
 
 .informacao {
@@ -67,6 +67,15 @@
     color: darkgoldenrod;
     font-size: 1.2rem;
     margin-top: auto;
+}
+
+.card .preco {
+    color: darkgoldenrod;
+}
+
+.card:has(.categoria.Promoção) .preco {
+    color: #d11a2a;
+    font-weight: bold;
 }
 
 .preco-antigo {
