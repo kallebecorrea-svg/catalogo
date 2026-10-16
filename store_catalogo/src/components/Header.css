@@ -1,8 +1,8 @@
-
+/* Estilo do cabeçalho da loja */
 header{
-    background-color: #151679;
+    background: linear-gradient(80deg, #0d3b66, #0066cc 100%);
     color: whitesmoke;
-    height: 250px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,6 +10,9 @@ header{
     border-radius: 25px;
 }
 
+/* Ajuste do título principal do cabeçalho */
 header h1{
     color: chocolate; /*Chocolate é para saber se funcionou */
+    font-size: 32px;
+    margin-bottom: 10px;
 }

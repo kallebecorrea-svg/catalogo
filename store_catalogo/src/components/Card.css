@@ -1,15 +1,19 @@
 .card {
+    background: #ffff;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 220px;
+    min-width: 220px;
+    min-height: 360px;
     border-radius: 15px;
-    gap: 20px;
-    padding: 18px;
+    padding: 10px;
+    gap: 14px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
     transition: 0.3s;
+    background-color: white;
 }
 
 .card:hover {
@@ -18,8 +22,8 @@
 
 .categoria {
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 15px;
+    left: 15px;
     color: white;
     font-size: 12px;
     font-weight: bold;
@@ -44,14 +48,38 @@
     background: red;
 }
 
-.informacao{
-    padding: 15px;
+.informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    padding: 15px 0 0;
 }
 
-.imagem{
-    max-width: 100%;
+.nome {
+    min-height: 52px;
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+.preco {
+    color: darkgoldenrod;
+    font-size: 1.2rem;
+    margin-top: auto;
+}
+
+.preco-antigo {
+    color: #666;
+    font-size: 0.85rem;
+    text-decoration: line-through;
+    margin-top: 4px;
+}
+
+.imagem {
+    width: 100%;
     background: black;
-    height: 200px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;

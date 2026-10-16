@@ -1,8 +1,11 @@
 import Header from "./components/Header"
 import Card from "./components/Card"
+import "./styles/style.css"
 
+// Página principal da loja
 function App() {
 
+  // Lista de produtos exibidos no catálogo
   const produtos = [
     {
       id: 1,
@@ -31,13 +34,20 @@ function App() {
       preco: 190.99,
       imagem: "HEADSET",
       categoria: "Áudio"
+    },
+    {
+      id:5,
+      nome:"Notebook",
+      preco: 6000.00,
+      precoAntigo: 7999.99,
+      imagem: "NOTEBOOK",
+      categoria: "Promoção"
     }
-
   ]
   return (
     <>
       <Header />
-      <section className="grip-produtos">
+      <section className="grid-produtos">
         {
           produtos.map((produto) => {
             return (
@@ -45,6 +55,7 @@ function App() {
                 key={produto.id}
                 nome={produto.nome}
                 preco={produto.preco}
+                precoAntigo={produto.precoAntigo}
                 categoria={produto.categoria}
                 imagem={produto.imagem}
               ></Card>

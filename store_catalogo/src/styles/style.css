@@ -1,0 +1,21 @@
+/* Reset global para padronizar margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(5, 5, 64);
+    font-family: sans-serif;
+}
+
+/* Área dos produtos: organiza os cards em linhas e centraliza */
+.grid-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 24px;
+}

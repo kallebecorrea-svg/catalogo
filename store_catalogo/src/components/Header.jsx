@@ -1,5 +1,6 @@
 import "./Header.css"
 
+// Cabeçalho da loja
 export default function Header() {
     return (
         <header>
